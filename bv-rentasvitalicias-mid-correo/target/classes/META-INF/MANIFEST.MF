@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1505394397095
+Build-Jdk: 1.8.0_51
+Built-By: juan.videla
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Servicios Credito correo
+Bundle-DocURL: https://bicevida.cl
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: [bv-rentasvitalicias-mid-correo]
+Bundle-SymbolicName: bv-rentasvitalicias-mid-correo
+Bundle-Vendor: Bicevida
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: cl.bicevida.beans.aggregators;uses:="org.apache.camel,or
+ g.apache.camel.processor.aggregate";version="1.0.0",cl.bicevida.beans.c
+ orreo;uses:="com.fasterxml.jackson.annotation";version="1.0.0",cl.bicev
+ ida.esb.camel.rest.services;uses:="com.fasterxml.jackson.annotation";ve
+ rsion="1.0.0",cl.bicevida.esb.camel.rest.services2;uses:="com.fasterxml
+ .jackson.annotation";version="1.0.0",cl.bicevida.security;uses:="javax.
+ security.auth.callback,javax.xml.namespace,javax.xml.ws.handler,javax.x
+ ml.ws.handler.soap";version="1.0.0"
+Import-Package: com.fasterxml.jackson.annotation;version="[2.6,3)",javax
+ .security.auth.callback,javax.xml.namespace,javax.xml.soap,javax.xml.ws
+ .handler,javax.xml.ws.handler.soap,org.apache.camel;version="[2.17,3)",
+ org.apache.camel.processor.aggregate;version="[2.17,3)",org.osgi.servic
+ e.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

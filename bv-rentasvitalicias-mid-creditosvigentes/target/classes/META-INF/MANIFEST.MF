@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1506000750459
+Build-Jdk: 1.8.0_51
+Built-By: juan.videla
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Servicios Datos Creditos Vigentes
+Bundle-DocURL: https://bicevida.cl
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: [bv-rentasvitalicias-mid-creditosvigentes]
+Bundle-SymbolicName: bv-rentasvitalicias-mid-creditosvigentes
+Bundle-Vendor: Bicevida
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: cl.bicevida.beans.aggregators;uses:="org.apache.camel,or
+ g.apache.camel.processor.aggregate";version="1.0.0",cl.bicevida.beans.c
+ reditosvigentes;uses:="com.fasterxml.jackson.annotation";version="1.0.0
+ ",cl.bicevida.beans.processors;uses:="org.apache.camel";version="1.0.0"
+ ,cl.bicevida.esb.camel.aggregators;uses:="org.apache.camel";version="1.
+ 0.0",cl.bicevida.esb.camel.rest.services;uses:="cl.bicevida.beans.credi
+ tosvigentes,com.fasterxml.jackson.annotation,javax.ws.rs,javax.ws.rs.co
+ re";version="1.0.0",cl.bicevida.esb.camel.rest.services2;uses:="cl.bice
+ vida.beans.creditosvigentes,com.fasterxml.jackson.annotation,javax.ws.r
+ s,javax.ws.rs.core";version="1.0.0",cl.bicevida.security;uses:="javax.s
+ ecurity.auth.callback,javax.xml.namespace,javax.xml.ws.handler,javax.xm
+ l.ws.handler.soap";version="1.0.0"
+Import-Package: cl.bicevida.beans.creditosvigentes,cl.bicevida.esb.camel
+ .rest.services2,com.fasterxml.jackson.annotation;version="[2.6,3)",java
+ x.security.auth.callback,javax.ws.rs;version="[2.0,3)",javax.ws.rs.core
+ ;version="[2.0,3)",javax.xml.namespace,javax.xml.soap,javax.xml.ws.hand
+ ler,javax.xml.ws.handler.soap,org.apache.camel;version="[2.17,3)",org.a
+ pache.camel.processor.aggregate;version="[2.17,3)",org.apache.log4j;ver
+ sion="[1.2,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)",org.s
+ lf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

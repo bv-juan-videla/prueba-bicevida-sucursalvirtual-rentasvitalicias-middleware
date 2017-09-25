@@ -1,0 +1,7 @@
+cl\bicevida\esb\camel\rest\services\Activity.class
+cl\bicevida\security\UTPasswordCallback.class
+cl\bicevida\beans\aggregators\ActualizaBDPAg.class
+cl\bicevida\esb\camel\rest\services2\Activity.class
+cl\bicevida\security\WSSecurityHeaderSOAPHandler.class
+cl\bicevida\beans\correo\Correo.class
+cl\bicevida\beans\correo\Respuesta.class

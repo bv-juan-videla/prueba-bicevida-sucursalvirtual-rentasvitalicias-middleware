@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1505394400874
+Build-Jdk: 1.8.0_51
+Built-By: juan.videla
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Servicios Datos Credito Disponible
+Bundle-DocURL: https://bicevida.cl
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: [bv-rentasvitalicias-mid-creditodisponible]
+Bundle-SymbolicName: bv-rentasvitalicias-mid-creditodisponible
+Bundle-Vendor: Bicevida
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: cl.bicevida.beans.aggregators;version="1.0.0",cl.bicevid
+ a.beans.creditosvigentes;version="1.0.0",cl.bicevida.beans.processors;v
+ ersion="1.0.0",cl.bicevida.esb.camel.rest.services;uses:="cl.bicevida.b
+ eans.creditosvigentes";version="1.0.0",cl.bicevida.esb.camel.rest.servi
+ ces2;uses:="cl.bicevida.beans.creditosvigentes";version="1.0.0",cl.bice
+ vida.security;uses:="javax.security.auth.callback,javax.xml.namespace,j
+ avax.xml.ws.handler,javax.xml.ws.handler.soap";version="1.0.0"
+Import-Package: cl.bicevida.beans.creditosvigentes,javax.security.auth.c
+ allback,javax.xml.namespace,javax.xml.soap,javax.xml.ws.handler,javax.x
+ ml.ws.handler.soap,org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
